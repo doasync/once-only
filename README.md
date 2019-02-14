@@ -25,19 +25,19 @@ yarn add once-only
 ## Usage
 
 ```js
-  import { onceOnly } from 'once-only'
+import { onceOnly } from 'once-only'
 ```
 
 Create:
 
 ```js
-  const createUserOnce = onceOnly(createUser);
+const createUserOnce = onceOnly(createUser);
 ```
 
 Original function will be called only once. It returns cache on a repeated call:
 
 ```js
-  const currentUser = createUserOnce({ userId: 234 });
+const currentUser = createUserOnce({ userId: 234 });
 ```
 
 You can pass configuration object to `onceOnly` as a second argument:
@@ -55,13 +55,13 @@ Default values are: `{ attach: false, strict: false }`
 Attach `once` function to the original function:
 
 ```js
-  onceOnly(fetchCompany, { attach: true });
+onceOnly(fetchCompany, { attach: true });
 ```
 
 Then call it:
 
 ```js
-  const promise = fetchCompany.once({ companyId: 11 });
+const promise = fetchCompany.once({ companyId: 11 });
 ```
 
 #### `strict` option
@@ -69,8 +69,8 @@ Then call it:
 You can throw an error when a function is called more than once:
 
 ```js
-  const getIdOnceOnly = onceOnly(getId, { strict: true });
-  const users = getIdOnceOnly({ userId: 234 }); // Throws an error
+const getIdOnceOnly = onceOnly(getId, { strict: true });
+const users = getIdOnceOnly({ userId: 234 }); // Throws an error
 ```
 
 ### Static properties of a once-only function:
@@ -79,14 +79,14 @@ Returned function has two static properties (as well as an attached `once` funct
 
 #### `.called`
 ```js
-  console.log(fetchUsersOnce.called); // true or false
+console.log(fetchUsersOnce.called); // true or false
 ```
 
 #### `.cache`
 ```js
-  console.log(fetchUserOnce.cache); // function: () => cache
-  const result = fetchUserOnce.cache(); // call cache getter
-  console.log(result); // logs the result of the first function call
+console.log(fetchUserOnce.cache); // function: () => cache
+const result = fetchUserOnce.cache(); // call cache getter
+console.log(result); // logs the result of the first function call
 ```
 
 ## Tip
