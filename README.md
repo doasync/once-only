@@ -95,7 +95,7 @@ If you found this packeage useful, please star it on [GitHub](https://github.com
 
 ---
 
-#### Definition of "once-only" in English
+### Definition of "once-only" in English
 
 **once-only** _adjective_
 
