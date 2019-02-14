@@ -1,0 +1,62 @@
+{
+  "name": "once-only",
+  "description": "Call function once. Create a never to be repeated function",
+  "version": "0.0.0",
+  "author": {
+    "name": "DoAsync",
+    "email": "doasync@gmail.com"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.11",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-compat": "^2.6.2",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^1.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "flow-bin": "^0.93.0",
+    "flow-coverage-report": "^0.6.1",
+    "flow-typed": "^2.5.1",
+    "jest": "^24.1.0",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doasync/use-call.git"
+  },
+  "keywords": [
+    "once",
+    "only",
+    "onetime",
+    "call once",
+    "never repeat",
+    "effector"
+  ],
+  "browserslist": [
+    "Chrome >= 67",
+    "Firefox >= 63",
+    "Safari >= 11.1",
+    "iOS >= 11.4",
+    "Opera >= 53",
+    "Edge >= 18"
+  ],
+  "license": "MIT"
+}
