@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/doasync/use-call.git"
+    "url": "git://github.com/doasync/once-only.git"
   },
   "keywords": [
     "once",
