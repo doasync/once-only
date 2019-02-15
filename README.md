@@ -91,7 +91,7 @@ console.log(result); // logs the result of the first function call
 
 ## Tip
 
-If you found this packeage useful, please star it on [GitHub](https://github.com/doasync/use-promise) ★
+If you found this packeage useful, please star it on [GitHub](https://github.com/doasync/once-only) ★
 
 ---
 
