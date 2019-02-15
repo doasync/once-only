@@ -1,19 +1,14 @@
 /* eslint-disable no-param-reassign, no-use-before-define */
 
-const onceOnly = (fn, config = { attach: false, strict: false }) => {
+const onceOnly = (fn, { attach, strict } = { attach: false, strict: false }) => {
   if (typeof fn !== 'function') {
     throw new Error(`expected a function but got: ${typeof fn}`);
   }
 
-  const { attach, strict } = config;
   const name = fn.displayName || fn.name || '<anonymous>';
   let cache;
 
-  f.called = false;
-
-  if (attach === true) {
-    fn.once = f;
-  }
+  if (attach === true) fn.once = f;
 
   function f (...args) {
     if (f.called) {
@@ -24,7 +19,7 @@ const onceOnly = (fn, config = { attach: false, strict: false }) => {
     }
 
     f.called = true;
-    cache = fn(...args);
+    cache = fn.apply(this, args);
     f.cache = () => cache;
 
     return cache;
